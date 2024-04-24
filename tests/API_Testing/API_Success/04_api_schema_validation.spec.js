@@ -6,7 +6,7 @@ const Ajv = require("ajv")
 
 const userId = 2;
 
-test.skip("Schema validation", async({ request } ) => {
+test.skip("Not Yet Implemented - Schema validation", async({ request } ) => {
 
       //create a object for a base page
     const basepageapi = new API_Base_Class

@@ -36,7 +36,7 @@ module.exports = defineConfig({
     screenshot : 'only-on-failure',
     video : 'on-first-retry',
     baseURL : 'https://reqres.in/',
-    headless : true
+    headless : false
   },
 
   /* Configure projects for major browsers */

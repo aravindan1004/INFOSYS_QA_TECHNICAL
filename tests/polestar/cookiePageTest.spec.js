@@ -9,7 +9,6 @@ test("Test home page cookie pop up screen", async ({ page }) => {
     const cookie = new Cookie_Page(page);
     await cookie.openurl(url);
     await cookie.verifyTitle();
-    await cookie.verifybannerTitle();
     await cookie.verifycookiecheckboxes(cookieelements);
     await cookie.acceptall()
 

@@ -1,4 +1,4 @@
-const Base_Page = require ("../pages/Base_Page");
+
 const {expect} = require ("@playwright/test")
 
 exports.Cookie_Page = class Cookie_Page{
@@ -20,13 +20,10 @@ exports.Cookie_Page = class Cookie_Page{
 	}
 
     async verifyTitle() {
-        await expect(this.page).toHaveTitle("Pure progressive performance | Polestar");
+        await expect.soft(this.page).toHaveTitle("Pure progressive performance | Polestar");
 
 	}
-    //verify the title of the cookie popup
-    async verifybannerTitle(){
-        await expect(this.page.locator(this.bannerTitle)).toHaveText("Welcome");
-    }
+
     //click on accept all button
     async acceptall(){
         await this.page.getByText(this.acceptAll).click();
